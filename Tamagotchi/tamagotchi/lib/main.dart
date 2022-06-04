@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tamagotchi/screens/fetchuserdata.dart';
 import 'package:tamagotchi/screens/homepage.dart';
+import 'package:tamagotchi/screens/loginpage.dart';
 import 'package:tamagotchi/screens/shoppage.dart';
 
 void main() {
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //This specifies the app entrypoint
-      initialRoute: '/',
+      initialRoute: LoginPage.route,
       //This maps names to the set of routes within the app
       routes: {
-        '/': (context) => const HomePage(),
+        LoginPage.route: (context) => const LoginPage(),
+        HomePage.route: (context) => const HomePage(),
         '/shop/': (context) => const ShopPage(),
         '/fetchpage/': (context) => FetchPage(),
       },
