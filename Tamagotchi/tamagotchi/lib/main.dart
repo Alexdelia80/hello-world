@@ -8,6 +8,7 @@ void main() {
   runApp(const MyApp());
 } //main
 
+// login e fitbitter ok
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
